@@ -821,10 +821,10 @@ func TestBuildKeyWithDimensions(t *testing.T) {
 		{
 			name: "resource attribute contains instance ID",
 			optionalDims: []dimension{
-				{name: semconv.AttributeServiceInstanceID},
+				{name: signozID},
 			},
 			resourceAttrMap: map[string]interface{}{
-				semconv.AttributeServiceInstanceID: testID,
+				signozID: testID,
 			},
 			wantKey: "ab\u0000c\u0000SPAN_KIND_UNSPECIFIED\u0000STATUS_CODE_UNSET\u0000test-instance-id",
 		},

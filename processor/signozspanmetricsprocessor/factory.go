@@ -31,6 +31,8 @@ const (
 	typeStr = "signozspanmetrics"
 	// The stability level of the processor.
 	stability = component.StabilityLevelBeta
+
+	signozID = "signoz.collector.id"
 )
 
 // NewFactory creates a factory for the spanmetrics processor.
